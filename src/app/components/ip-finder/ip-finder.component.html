@@ -1,0 +1,19 @@
+<div class="network-container">
+  <h2>🌐 IP Address Finder</h2>
+
+  <button class="network-btn" (click)="getIpAddress()">
+    Show My IP Address
+  </button>
+
+  <div class="ip-info">
+    <p>
+      <strong>Your Local IP Address:</strong>
+      {{ ip_data?.ip_address || "xx.xx.xx.xx" }}
+    </p>
+
+    <p>
+      <strong>Your Public IP Address:</strong>
+      {{ public_ip_address?.ip || "xx.xx.xx.xx" }}
+    </p>
+  </div>
+</div>
